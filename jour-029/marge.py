@@ -47,7 +47,7 @@ def rapport(nom: str, revient: float, taux_marque: float) -> None:
 
 
 def main() -> int:
-    assert prix_de_vente(700, 0.30) == 1000
+    assert math.isclose(prix_de_vente(700, 0.30), 1000)
     assert prix_psychologique(4120) == 4500 and prix_psychologique(4600) == 4900
     if len(sys.argv) == 1:
         rapport("Écouteurs Bluetooth", 2850, 0.40)
