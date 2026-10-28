@@ -18,4 +18,4 @@ Une GitHub Action (`.github/workflows/publication-quotidienne.yml`) s'exécute c
 Elle prend le prochain programme dans la branche `reserve`, coche la ligne dans `PLAN.md` et publie le commit du jour.
 On peut aussi la lancer à la main depuis l'onglet **Actions** → **Publication quotidienne** → **Run workflow**.
 
-Auteur : Ange-Miguel AKPANON — étudiant en Systèmes Embarqués et IoT (IFRI, UAC, Bénin).
+Auteur : Ange-Miguel AKPANON.
