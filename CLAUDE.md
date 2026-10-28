@@ -12,7 +12,7 @@ Routine : chaque jour, un seul programme, le prochain jour non coché de `PLAN.m
 5. Ne rien laisser compilé dans le dépôt.
 6. Cocher la ligne dans `PLAN.md` (`[ ]` → `[x]`).
 7. Commit et push directement sur `main` :
-   - auteur : `Ange-Miguel <jonathanecommerce9@gmail.com>` ;
+   - auteur : `AKPANON Ange-Miguel <angemiguelosbelakpanon@gmail.com>` ;
    - message : `Jour NNN : <problème>` ;
    - **aucune** ligne `Co-Authored-By`, `Claude-Session` ou autre mention de Claude.
 8. Si les 200 jours sont cochés : ne rien faire.
