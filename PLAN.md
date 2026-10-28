@@ -11,7 +11,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | Jour | Statut | Langue | Problème |
 |---|---|---|---|
 | 001 | [x] | C | Convertisseur FCFA ↔ euro ↔ dollar avec taux fixes |
-| 002 | [ ] | Python | Calculateur de monnaie à rendre (pièces et billets FCFA) |
+| 002 | [x] | Python | Calculateur de monnaie à rendre (pièces et billets FCFA) |
 | 003 | [ ] | Java | Calculateur de moyenne semestrielle avec coefficients (notes IFRI) |
 | 004 | [ ] | C | Convertisseur de températures Celsius / Fahrenheit / Kelvin |
 | 005 | [ ] | Python | Calcul de l'IMC avec interprétation |
