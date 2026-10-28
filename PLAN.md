@@ -30,15 +30,15 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 018 | [ ] | Java | Calculateur d'âge exact (années, mois, jours) |
 | 019 | [ ] | C | Conversion de durée : secondes → h/min/s |
 | 020 | [ ] | Python | Calculateur de consommation de carburant (L/100 km et coût) |
-| 021 | [ ] | Java | Calculateur d'intérêts simples et composés (tontine/épargne) |
-| 022 | [ ] | C | Simulateur de remboursement de prêt (mensualités) |
-| 023 | [ ] | Python | Validateur de numéro de téléphone béninois (+229 01 ...) |
-| 024 | [ ] | Java | Validateur d'adresse e-mail simple |
-| 025 | [ ] | C | Formateur de montants avec séparateurs de milliers |
-| 026 | [ ] | Python | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
-| 027 | [ ] | Java | Calcul de marge et prix de vente conseillé |
-| 028 | [ ] | C | Liste de courses en ligne de commande (ajouter, retirer, afficher) |
-| 029 | [ ] | Python | Minuteur Pomodoro en console |
+| 021 | [ ] | Java | Simulateur de remboursement de prêt (mensualités) |
+| 022 | [ ] | C | Validateur de numéro de téléphone béninois (+229 01 ...) |
+| 023 | [ ] | Python | Calculateur d'intérêts simples et composés (tontine/épargne) |
+| 024 | [ ] | Java | Formateur de montants avec séparateurs de milliers |
+| 025 | [ ] | C | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
+| 026 | [ ] | Python | Validateur d'adresse e-mail simple |
+| 027 | [ ] | Java | Liste de courses en ligne de commande (ajouter, retirer, afficher) |
+| 028 | [ ] | C | Minuteur Pomodoro en console |
+| 029 | [ ] | Python | Calcul de marge et prix de vente conseillé |
 | 030 | [ ] | Java | Chronomètre avec tours intermédiaires |
 | 031 | [ ] | C | Tri des notes d'une classe et classement |
 | 032 | [ ] | Python | Statistiques d'une série : moyenne, médiane, écart-type |
