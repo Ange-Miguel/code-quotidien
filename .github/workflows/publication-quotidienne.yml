@@ -1,0 +1,50 @@
+name: Publication quotidienne
+
+on:
+  schedule:
+    # 07:45 UTC = 08:45 au Bénin (UTC+1), tous les jours
+    - cron: "45 7 * * *"
+  workflow_dispatch:
+    inputs:
+      forcer:
+        description: "Publier même si un jour a déjà été publié aujourd'hui"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publication-quotidienne
+  cancel-in-progress: false
+
+jobs:
+  publier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 60
+
+      - name: Récupérer la réserve de programmes
+        run: git fetch --depth=1 origin reserve
+
+      - name: Publier le jour suivant
+        id: publication
+        env:
+          FORCER: ${{ inputs.forcer || 'false' }}
+        run: python3 .github/scripts/publier_jour.py
+
+      - name: Commit et push
+        if: steps.publication.outputs.jour != ''
+        env:
+          JOUR: ${{ steps.publication.outputs.jour }}
+          TITRE: ${{ steps.publication.outputs.titre }}
+        run: |
+          git config user.name "AKPANON Ange-Miguel"
+          git config user.email "angemiguelosbelakpanon@gmail.com"
+          git add "jour-${JOUR}" PLAN.md
+          git commit -m "Jour ${JOUR} : ${TITRE}"
+          git push origin main

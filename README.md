@@ -13,4 +13,9 @@ Chaque programme résout un problème concret du quotidien, du plus simple au pl
 3. **Jours 101-150** — Systèmes embarqués et IoT
 4. **Jours 151-200** — Problèmes réels et mini-projets
 
+## Automatisation
+Une GitHub Action (`.github/workflows/publication-quotidienne.yml`) s'exécute chaque jour à 8 h 45 (heure du Bénin).
+Elle prend le prochain programme dans la branche `reserve`, coche la ligne dans `PLAN.md` et publie le commit du jour.
+On peut aussi la lancer à la main depuis l'onglet **Actions** → **Publication quotidienne** → **Run workflow**.
+
 Auteur : Ange-Miguel AKPANON — étudiant en Systèmes Embarqués et IoT (IFRI, UAC, Bénin).
