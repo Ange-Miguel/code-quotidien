@@ -19,7 +19,7 @@ gcc -Wall -Wextra -o durees durees.c -lm
 
 ## Exemple de sortie
 ```
-59 s = 00 h 00 min 59 s
+          59 s = 00 h 00 min 59 s
         3600 s = 01 h 00 min 00 s
        86399 s = 23 h 59 min 59 s
      1234567 s = 14 j 06 h 56 min 07 s

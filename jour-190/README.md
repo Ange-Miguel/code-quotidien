@@ -19,7 +19,7 @@ gcc -Wall -Wextra -o markdown_html markdown_html.c -lm
 
 ## Exemple de sortie
 ```
-<h1>Boutique ORVIX</h1>
+<h1>Ma boutique</h1>
 <p>Bienvenue ! Nos produits sont <strong>importés directement</strong> et <em>garantis 6 mois</em>. Livraison à Cotonou et Calavi.</p>
 <h2>Nos best-sellers</h2>
 <ul>

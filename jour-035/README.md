@@ -18,7 +18,7 @@ python3 nombre_en_lettres.py
 
 ## Exemple de sortie
 ```
-71 → soixante et onze francs CFA
+             71 → soixante et onze francs CFA
             180 → cent quatre-vingts francs CFA
           1 960 → mille neuf cent soixante francs CFA
         250 000 → deux cent cinquante mille francs CFA

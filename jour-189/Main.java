@@ -75,7 +75,7 @@ public class Main {
     public static void main(String[] args) {
         if (args.length > 0) { System.err.println("Ce programme est une démonstration : lancez-le sans argument."); System.exit(1); }
         List<Map<String, String>> formulaires = List.of(
-                Map.of("nom", "  akpanon   ange-miguel ", "email", "Ange.Miguel@Exemple.BJ", "telephone", "01 66 54 61 44",
+                Map.of("nom", "  akpanon   ange-miguel ", "email", "Ange.Miguel@Exemple.BJ", "telephone", "01 90 12 34 56",
                         "naissance", "2005-03-14", "motDePasse", "Calavi2026xyz", "confirmation", "Calavi2026xyz"),
                 Map.of("nom", "<script>alert(1)</script>", "email", "pas-un-email", "telephone", "97 00 00 00",
                         "naissance", "2015-01-01", "motDePasse", "court", "confirmation", "autre"),

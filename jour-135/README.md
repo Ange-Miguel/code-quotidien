@@ -21,9 +21,9 @@ java Main
 ```
 Serveur démarré sur un port libre ; interrogation automatique :
 GET /api/capteur  → 200 application/json; charset=utf-8
-   {"temperature":28.0,"humidite":65,"heure":"09:21:25"}
+   {"temperature":27.9,"humidite":64,"heure":"09:41:34"}
 GET /             → 200 text/html; charset=utf-8
-   <h1>Serre</h1><p>Température : <b>28,0 °C</b></p><p>Humidité…
+   <h1>Serre</h1><p>Température : <b>27,9 °C</b></p><p>Humidité…
 GET /inconnu      → 404 text/plain; charset=utf-8
    Page introuvable
 POST /api/capteur → 405 Méthode non autorisée

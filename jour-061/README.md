@@ -20,8 +20,8 @@ gcc -Wall -Wextra -o quicksort quicksort.c -lm
 ## Exemple de sortie
 ```
 1000000 prix triés
-  Notre tri rapide : 0.070 s
-  qsort standard   : 0.114 s
+  Notre tri rapide : 0.069 s
+  qsort standard   : 0.113 s
   Moins cher : 100 FCFA | plus cher : 1000095 FCFA | médian : 499450 FCFA
-  Tri d'un tableau déjà trié : 0.016 s (grâce à la médiane de trois)
+  Tri d'un tableau déjà trié : 0.015 s (grâce à la médiane de trois)
 ```

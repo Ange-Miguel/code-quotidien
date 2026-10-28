@@ -26,11 +26,11 @@ python3 hachage_mdp.py
    Attaque par dictionnaire : ['awa', 'kofi'] trouvés en 0.1 ms
 
 2) Bonne pratique : PBKDF2-SHA256, sel aléatoire, 200 000 itérations
-   awa   pbkdf2_sha256$200000$ad5b386a4…e40ca6595ecf
-   kofi  pbkdf2_sha256$200000$f8d319d6c…1d8ae94634f7
-   ines  pbkdf2_sha256$200000$8c78cfb60…ac61f2171a88
+   awa   pbkdf2_sha256$200000$4b79014b9…d0c209181a03
+   kofi  pbkdf2_sha256$200000$e71baa9a9…974b4196eb69
+   ines  pbkdf2_sha256$200000$1423312e1…e1ce72d7b7d2
    → même mot de passe, empreintes différentes grâce au sel.
    Vérification Awa « benin229 » : True | « Benin229 » : False
-   Un essai coûte 25 ms : tester 10 millions de mots de passe prendrait ~3 jours par compte.
+   Un essai coûte 26 ms : tester 10 millions de mots de passe prendrait ~3 jours par compte.
 
 ```

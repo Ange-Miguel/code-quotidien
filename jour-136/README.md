@@ -21,7 +21,7 @@ gcc -Wall -Wextra -o client_http client_http.c -lm
 ```
 SERVEUR reçu 179 octets :
         | POST /api/mesures HTTP/1.1
-        | Host: 127.0.0.1:55031
+        | Host: 127.0.0.1:57847
         | Content-Type: application/json
         | Content-Length: 55
         | Connection: close
@@ -31,7 +31,7 @@ CLIENT  mesure 1 : acceptée (code 201)
 
 SERVEUR reçu 179 octets :
         | POST /api/mesures HTTP/1.1
-        | Host: 127.0.0.1:55031
+        | Host: 127.0.0.1:57847
         | Content-Type: application/json
         | Content-Length: 55
 ```

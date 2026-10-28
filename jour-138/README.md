@@ -20,8 +20,8 @@ java Main
 ## Exemple de sortie
 ```
 Question « DECOUVERTE?v1 » envoyée, attente des réponses…
-    17 ms  prise-salon     type prise    capacités [on,off,conso]  (port 51931)
-    27 ms  camera-portail  type camera   capacités [flux,photo]  (port 39389)
-    38 ms  thermostat      type climat   capacités [consigne,mesure]  (port 46917)
+    22 ms  camera-portail  type camera   capacités [flux,photo]  (port 59988)
+    32 ms  prise-salon     type prise    capacités [on,off,conso]  (port 47662)
+    33 ms  thermostat      type climat   capacités [consigne,mesure]  (port 36344)
 3 appareil(s) trouvé(s) sur 4 ; sans réponse : [capteur-cuve]
 ```

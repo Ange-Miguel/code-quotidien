@@ -20,9 +20,9 @@ gcc -Wall -Wextra -o mot_de_passe mot_de_passe.c -lm
 ## Exemple de sortie
 ```
 5 mot(s) de passe de 16 caractères :
-  #aR%x!N@G2+xN*4c
-  +@HMT5uEeDrAt+g2
-  6HR&5P=BnYi=SEeK
-  Mh7ey9MNA$DNWVDq
-  S8bKb67h@u26?ysQ
+  eyNQoeg6*44+*BoL
+  G7bj%@Pmq=7$-Np3
+  -w+N-4#cSXH9VkdF
+  7V7BBA@m6?Nv9+6n
+  =4$Q2T7qekRGuVp2
 ```

@@ -50,7 +50,7 @@ def valider(adresse: str) -> tuple[bool, str]:
 
 
 def main() -> int:
-    adresses = sys.argv[1:] or ["angemiguel@gmail.com", "client@gmai.com", "contact@orvix.bj",
+    adresses = sys.argv[1:] or ["prenom.nom@gmail.com", "client@gmai.com", "contact@boutique.bj",
                                 "mauvais@@mail.com", "sans-domaine@", "jean dupont@yahoo.fr",
                                 "a.b-c@sous.domaine.org", "zzz"]
     toutes_valides = True

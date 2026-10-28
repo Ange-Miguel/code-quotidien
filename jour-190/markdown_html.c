@@ -101,7 +101,7 @@ int main(int argc, char *argv[]) {
     }
     if (argc > 2) { fprintf(stderr, "Usage : %s [fichier.md]\n", argv[0]); return 1; }
     const char *md[] = {
-        "# Boutique ORVIX", "", "Bienvenue ! Nos produits sont **importés directement** et *garantis 6 mois*.",
+        "# Ma boutique", "", "Bienvenue ! Nos produits sont **importés directement** et *garantis 6 mois*.",
         "Livraison à Cotonou et Calavi.", "", "## Nos best-sellers", "- **Écouteurs** Bluetooth : 4 500 FCFA",
         "- Lampe solaire, idéale pendant les coupures", "- Chargeur rapide `20 W`", "",
         "Contact : [WhatsApp](https://wa.me/22901000000) ou [ce lien piégé](javascript:alert(1))", "",

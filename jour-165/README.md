@@ -20,8 +20,8 @@ java Main
 ## Exemple de sortie
 ```
 DEV-2026-001 — Association exemple — 2026-10-01 (valable jusqu'au 2026-10-31)
-   Animation motion design 30 s       1 ×  150 000
    Visuel réseaux sociaux             3 ×    8 000
+   Animation motion design 30 s       1 ×  150 000
    Révisions supplémentaires          1 ×   10 000
    TOTAL 184 000 FCFA — acompte à la commande 92 000 FCFA
 

@@ -18,9 +18,9 @@ python3 fibonacci.py
 
 ## Exemple de sortie
 ```
-F(10) = 55 | naïf : 177 appels  0.0 ms | rapide : 0.005 ms
+F(10) = 55 | naïf : 177 appels  0.0 ms | rapide : 0.006 ms
 F(20) = 6765 | naïf : 21 891 appels  0.9 ms | rapide : 0.004 ms
-F(25) = 75025 | naïf : 242 785 appels  10.9 ms | rapide : 0.007 ms
+F(25) = 75025 | naïf : 242 785 appels  10.5 ms | rapide : 0.010 ms
 
 Rapport F(n+1)/F(n) → nombre d'or φ ≈ 1,6180339887
    n =  5 : 1.6000000000

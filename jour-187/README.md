@@ -19,7 +19,7 @@ gcc -Wall -Wextra -o sessions sessions.c -lm
 
 ## Exemple de sortie
 ```
-Jetons (16 octets aléatoires) : awa=4a9534c7b8b86cc7… kofi=18c1b005a640191b…
+Jetons (16 octets aléatoires) : awa=0cc060836782fb95… kofi=7c76dd6dd60fbfba…
   08:00  requête de Awa    → autorisée
   08:20  requête de Awa    → autorisée
   08:45  requête de Awa    → autorisée

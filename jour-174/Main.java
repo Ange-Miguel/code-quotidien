@@ -87,7 +87,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        String texte = args.length > 0 ? String.join(" ", args) : "Tél +229 01 66 54 61 44";
+        String texte = args.length > 0 ? String.join(" ", args) : "Tél +229 01 90 12 34 56";
         boolean[][] g;
         try { g = encoder(texte); } catch (IllegalArgumentException e) { System.err.println("Erreur : " + e.getMessage()); System.exit(1); return; }
         System.out.println("Matrice 21×21 pour « " + texte + " » (format pédagogique, pas un vrai QR code) :");

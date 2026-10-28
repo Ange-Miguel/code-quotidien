@@ -28,5 +28,5 @@ python3 autocompletion.py
 « mo » → montre connectée, moto électrique
 « xyz » → aucune suggestion
 
-Catalogue de 20 000 produits : 1 000 suggestions en 0.7 ms
+Catalogue de 20 000 produits : 1 000 suggestions en 0.6 ms
 ```

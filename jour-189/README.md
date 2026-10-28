@@ -20,7 +20,7 @@ java Main
 ## Exemple de sortie
 ```
 Inscription de «   akpanon   ange-miguel  » :
-   normalisé : Akpanon Ange-miguel | ange.miguel@exemple.bj | +2290166546144
+   normalisé : Akpanon Ange-miguel | ange.miguel@exemple.bj | +2290190123456
    ✔ valide, compte créé
 
 Inscription de « &lt;script&gt;alert(1)&lt;/script&gt; » :

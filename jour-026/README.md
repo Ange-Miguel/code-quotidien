@@ -18,9 +18,9 @@ python3 email.py
 
 ## Exemple de sortie
 ```
-angemiguel@gmail.com         → ✔ valide
+prenom.nom@gmail.com         → ✔ valide
 client@gmai.com              → ✔ valide, mais vouliez-vous dire client@gmail.com ?
-contact@orvix.bj             → ✔ valide
+contact@boutique.bj          → ✔ valide
 mauvais@@mail.com            → ✘ doit contenir exactement un @
 sans-domaine@                → ✘ domaine incomplet (ex. gmail.com)
 jean dupont@yahoo.fr         → ✘ contient des espaces

@@ -18,7 +18,7 @@ python3 socket_tcp.py
 
 ## Exemple de sortie
 ```
-Passerelle à l'écoute sur 127.0.0.1:45403
+Passerelle à l'écoute sur 127.0.0.1:43283
 
    capteur-serre connecté, période 60 s
    capteur-serre envoie 29.5 °C → ok, prochaine mesure dans 60 s

@@ -18,7 +18,7 @@ python3 carburant.py
 
 ## Exemple de sortie
 ```
-Trajet      km  litres  L/100km  FCFA/km
+  Trajet      km  litres  L/100km  FCFA/km
        1     180     4.1     2.28     15.5
        2     215     4.8     2.23     15.2
        3     165     3.9     2.36     16.1

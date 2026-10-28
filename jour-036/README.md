@@ -19,8 +19,8 @@ java Main
 
 ## Exemple de sortie
 ```
-Crible jusqu'à 1 000 000 : 78 498 nombres premiers en 8,0 ms
-Test un par un : 78 498 premiers en 115,3 ms
+Crible jusqu'à 1 000 000 : 78 498 nombres premiers en 8,4 ms
+Test un par un : 78 498 premiers en 118,9 ms
 Les 20 premiers : 2 3 5 7 11 13 17 19 23 29 31 37 41 43 47 53 59 61 67 71 
 97 : premier
 1 000 003 : premier

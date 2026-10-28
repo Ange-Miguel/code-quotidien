@@ -19,7 +19,7 @@ java Main
 
 ## Exemple de sortie
 ```
-0 → 0 FCFA             | court : 0          | NumberFormat : 0
+              0 → 0 FCFA             | court : 0          | NumberFormat : 0
             950 → 950 FCFA           | court : 950        | NumberFormat : 950
           12500 → 12 500 FCFA        | court : 12,5 k     | NumberFormat : 12 500
          250000 → 250 000 FCFA       | court : 250,0 k    | NumberFormat : 250 000

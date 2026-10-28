@@ -2,7 +2,7 @@
  * Jour 022 — Validateur de numéro de téléphone béninois
  *
  * Problème : dans un formulaire (livraison, inscription), les clients écrivent
- * leur numéro de mille façons : « 0166546144 », « +229 01 66 54 61 44 »,
+ * leur numéro de mille façons : « 0190123456 », « +229 01 90 12 34 56 »,
  * « 00229-01.66.54.61.44 ». Il faut vérifier et normaliser.
  * Solution : on retire espaces, points, tirets et parenthèses ; on accepte les
  * préfixes +229 ou 00229 ; le numéro national doit alors faire 10 chiffres et
@@ -58,7 +58,7 @@ static int verifier(const char *saisie) {
 
 int main(int argc, char *argv[]) {
     if (argc == 1) {
-        const char *exemples[] = {"+229 01 66 54 61 44", "0166546144", "00229-01.97.00.00.00",
+        const char *exemples[] = {"+229 01 90 12 34 56", "0190123456", "00229-01.97.00.00.00",
                                   "97 00 00 00", "+229 01 66 54 61 4A", "(229) 0161000000"};
         for (int i = 0; i < 6; i++) verifier(exemples[i]);
         return 0;
