@@ -77,7 +77,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 060 | [ ] | Java | Tri à bulles, sélection et insertion comparés |
 | 061 | [ ] | C | Tri rapide (quicksort) sur des prix de produits |
 | 062 | [ ] | Python | Recherche dichotomique dans un catalogue trié |
-| 063 | [ ] | Java | Table de hachage : dictionnaire français → fon simple |
+| 063 | [ ] | Java | Table de hachage : dictionnaire français → anglais |
 | 064 | [ ] | C | Arbre binaire de recherche : annuaire de numéros |
 | 065 | [ ] | Python | Gestion de bibliothèque : emprunts et retours de livres |
 | 066 | [ ] | Java | Système de réservation de places de bus |
