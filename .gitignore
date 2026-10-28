@@ -1,0 +1,8 @@
+# Binaires et fichiers compilés
+*.o
+*.out
+*.exe
+*.class
+__pycache__/
+*.pyc
+a.out
