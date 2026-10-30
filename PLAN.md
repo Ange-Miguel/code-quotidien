@@ -13,7 +13,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 001 | [x] | C | Convertisseur FCFA ↔ euro ↔ dollar avec taux fixes |
 | 002 | [x] | Python | Calculateur de monnaie à rendre (pièces et billets FCFA) |
 | 003 | [x] | Java | Calculateur de moyenne semestrielle avec coefficients (notes IFRI) |
-| 004 | [ ] | C | Convertisseur de températures Celsius / Fahrenheit / Kelvin |
+| 004 | [x] | C | Convertisseur de températures Celsius / Fahrenheit / Kelvin |
 | 005 | [ ] | Python | Calcul de l'IMC avec interprétation |
 | 006 | [ ] | Java | Vérificateur d'année bissextile et nombre de jours du mois |
 | 007 | [ ] | C | Compte à rebours jusqu'à une date (examens, échéance) |
