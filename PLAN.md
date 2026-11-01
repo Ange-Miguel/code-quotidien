@@ -15,7 +15,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 003 | [x] | Java | Calculateur de moyenne semestrielle avec coefficients (notes IFRI) |
 | 004 | [x] | C | Convertisseur de températures Celsius / Fahrenheit / Kelvin |
 | 005 | [x] | Python | Calcul de l'IMC avec interprétation |
-| 006 | [ ] | Java | Vérificateur d'année bissextile et nombre de jours du mois |
+| 006 | [x] | Java | Vérificateur d'année bissextile et nombre de jours du mois |
 | 007 | [ ] | C | Compte à rebours jusqu'à une date (examens, échéance) |
 | 008 | [ ] | Python | Calculateur de facture d'électricité selon la tranche de consommation |
 | 009 | [ ] | Java | Partage d'une addition entre amis avec pourboire |
