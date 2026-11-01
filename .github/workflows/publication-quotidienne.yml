@@ -2,8 +2,10 @@ name: Publication quotidienne
 
 on:
   schedule:
-    # 07:45 UTC = 08:45 au Bénin (UTC+1), tous les jours
-    - cron: "45 7 * * *"
+    # Filet de sécurité : 10:30 UTC = 11:30 au Bénin. La publication principale
+    # est déclenchée à 11:00 (heure du Bénin) par une tâche externe (workflow_dispatch).
+    # Le script ne publie qu'un jour par date : pas de doublon.
+    - cron: "30 10 * * *"
   workflow_dispatch:
     inputs:
       forcer:
