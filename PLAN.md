@@ -18,7 +18,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 006 | [x] | Java | Vérificateur d'année bissextile et nombre de jours du mois |
 | 007 | [x] | C | Compte à rebours jusqu'à une date (examens, échéance) |
 | 008 | [x] | Python | Calculateur de facture d'électricité selon la tranche de consommation |
-| 009 | [ ] | Java | Partage d'une addition entre amis avec pourboire |
+| 009 | [x] | Java | Partage d'une addition entre amis avec pourboire |
 | 010 | [ ] | C | Générateur de mot de passe aléatoire robuste |
 | 011 | [ ] | Python | Vérificateur de force d'un mot de passe |
 | 012 | [ ] | Java | Compteur de mots, lignes et caractères d'un texte |
