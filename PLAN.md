@@ -19,7 +19,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 007 | [x] | C | Compte à rebours jusqu'à une date (examens, échéance) |
 | 008 | [x] | Python | Calculateur de facture d'électricité selon la tranche de consommation |
 | 009 | [x] | Java | Partage d'une addition entre amis avec pourboire |
-| 010 | [ ] | C | Générateur de mot de passe aléatoire robuste |
+| 010 | [x] | C | Générateur de mot de passe aléatoire robuste |
 | 011 | [ ] | Python | Vérificateur de force d'un mot de passe |
 | 012 | [ ] | Java | Compteur de mots, lignes et caractères d'un texte |
 | 013 | [ ] | C | Détecteur de palindromes (mots et phrases) |
