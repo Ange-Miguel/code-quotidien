@@ -22,7 +22,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 010 | [x] | C | Générateur de mot de passe aléatoire robuste |
 | 011 | [x] | Python | Vérificateur de force d'un mot de passe |
 | 012 | [x] | Java | Compteur de mots, lignes et caractères d'un texte |
-| 013 | [ ] | C | Détecteur de palindromes (mots et phrases) |
+| 013 | [x] | C | Détecteur de palindromes (mots et phrases) |
 | 014 | [ ] | Python | Chiffrement de César : chiffrer et déchiffrer un message |
 | 015 | [ ] | Java | Convertisseur décimal / binaire / hexadécimal |
 | 016 | [ ] | C | Table de multiplication formatée pour un enfant |
