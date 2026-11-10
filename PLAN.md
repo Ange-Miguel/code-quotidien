@@ -24,7 +24,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 012 | [x] | Java | Compteur de mots, lignes et caractères d'un texte |
 | 013 | [x] | C | Détecteur de palindromes (mots et phrases) |
 | 014 | [x] | Python | Chiffrement de César : chiffrer et déchiffrer un message |
-| 015 | [ ] | Java | Convertisseur décimal / binaire / hexadécimal |
+| 015 | [x] | Java | Convertisseur décimal / binaire / hexadécimal |
 | 016 | [ ] | C | Table de multiplication formatée pour un enfant |
 | 017 | [ ] | Python | Jeu « devine le nombre » avec nombre d'essais |
 | 018 | [ ] | Java | Calculateur d'âge exact (années, mois, jours) |
