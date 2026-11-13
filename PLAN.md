@@ -27,7 +27,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 015 | [x] | Java | Convertisseur décimal / binaire / hexadécimal |
 | 016 | [x] | C | Table de multiplication formatée pour un enfant |
 | 017 | [x] | Python | Jeu « devine le nombre » avec nombre d'essais |
-| 018 | [ ] | Java | Calculateur d'âge exact (années, mois, jours) |
+| 018 | [x] | Java | Calculateur d'âge exact (années, mois, jours) |
 | 019 | [ ] | C | Conversion de durée : secondes → h/min/s |
 | 020 | [ ] | Python | Calculateur de consommation de carburant (L/100 km et coût) |
 | 021 | [ ] | Java | Simulateur de remboursement de prêt (mensualités) |
