@@ -29,7 +29,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 017 | [x] | Python | Jeu « devine le nombre » avec nombre d'essais |
 | 018 | [x] | Java | Calculateur d'âge exact (années, mois, jours) |
 | 019 | [x] | C | Conversion de durée : secondes → h/min/s |
-| 020 | [ ] | Python | Calculateur de consommation de carburant (L/100 km et coût) |
+| 020 | [x] | Python | Calculateur de consommation de carburant (L/100 km et coût) |
 | 021 | [ ] | Java | Simulateur de remboursement de prêt (mensualités) |
 | 022 | [ ] | C | Validateur de numéro de téléphone béninois (+229 01 ...) |
 | 023 | [ ] | Python | Calculateur d'intérêts simples et composés (tontine/épargne) |
