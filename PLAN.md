@@ -32,7 +32,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 020 | [x] | Python | Calculateur de consommation de carburant (L/100 km et coût) |
 | 021 | [x] | Java | Simulateur de remboursement de prêt (mensualités) |
 | 022 | [x] | C | Validateur de numéro de téléphone béninois (+229 01 ...) |
-| 023 | [ ] | Python | Calculateur d'intérêts simples et composés (tontine/épargne) |
+| 023 | [x] | Python | Calculateur d'intérêts simples et composés (tontine/épargne) |
 | 024 | [ ] | Java | Formateur de montants avec séparateurs de milliers |
 | 025 | [ ] | C | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
 | 026 | [ ] | Python | Validateur d'adresse e-mail simple |
