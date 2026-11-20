@@ -34,7 +34,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 022 | [x] | C | Validateur de numéro de téléphone béninois (+229 01 ...) |
 | 023 | [x] | Python | Calculateur d'intérêts simples et composés (tontine/épargne) |
 | 024 | [x] | Java | Formateur de montants avec séparateurs de milliers |
-| 025 | [ ] | C | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
+| 025 | [x] | C | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
 | 026 | [ ] | Python | Validateur d'adresse e-mail simple |
 | 027 | [ ] | Java | Liste de courses en ligne de commande (ajouter, retirer, afficher) |
 | 028 | [ ] | C | Minuteur Pomodoro en console |
