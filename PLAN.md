@@ -36,7 +36,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 024 | [x] | Java | Formateur de montants avec séparateurs de milliers |
 | 025 | [x] | C | Calcul du prix de revient d'un produit importé de Chine (achat + fret + douane) |
 | 026 | [x] | Python | Validateur d'adresse e-mail simple |
-| 027 | [ ] | Java | Liste de courses en ligne de commande (ajouter, retirer, afficher) |
+| 027 | [x] | Java | Liste de courses en ligne de commande (ajouter, retirer, afficher) |
 | 028 | [ ] | C | Minuteur Pomodoro en console |
 | 029 | [ ] | Python | Calcul de marge et prix de vente conseillé |
 | 030 | [ ] | Java | Chronomètre avec tours intermédiaires |
