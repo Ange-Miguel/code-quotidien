@@ -24,3 +24,17 @@ static void attendre_ms(long ms) {
     nanosleep(&t, NULL);
 }
 
+static void phase(Etat e, int numero, long ms_par_seconde) {
+    int total = DUREES_MIN[e] * 60;
+    const int largeur = 30;
+    for (int s = 0; s <= total; s += 15) {           /* rafraîchissement par pas de 15 s */
+        int rempli = s * largeur / total;
+        printf("\r[%d] %-13s |", numero, NOMS[e]);
+        for (int i = 0; i < largeur; i++) putchar(i < rempli ? '#' : '.');
+        printf("| %02d:%02d restantes ", (total - s) / 60, (total - s) % 60);
+        fflush(stdout);
+        attendre_ms(ms_par_seconde * 15);
+    }
+    printf("\n");
+}
+
