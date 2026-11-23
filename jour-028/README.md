@@ -11,3 +11,9 @@ Une machine à états (TRAVAIL, PAUSE_COURTE, PAUSE_LONGUE) et une barre de prog
 ## Ce qu'on apprend
 Les machines à états, nanosleep pour attendre sans bloquer le processeur, \r pour réécrire une ligne et fflush pour forcer l'affichage.
 
+## Lancer
+```bash
+gcc -Wall -Wextra -o pomodoro pomodoro.c -lm
+./pomodoro
+```
+
