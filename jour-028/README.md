@@ -17,3 +17,21 @@ gcc -Wall -Wextra -o pomodoro pomodoro.c -lm
 ./pomodoro
 ```
 
+## Exemple de sortie
+```
+Pomodoro : 4 cycle(s) (mode démo accéléré)
+
+[1] Travail       |..............................| 25:00 restantes 
+[1] Travail       |..............................| 24:45 restantes 
+[1] Travail       |..............................| 24:30 restantes 
+[1] Travail       |..............................| 24:15 restantes 
+[1] Travail       |#.............................| 24:00 restantes 
+[1] Travail       |#.............................| 23:45 restantes 
+[1] Travail       |#.............................| 23:30 restantes 
+[1] Travail       |##............................| 23:15 restantes 
+[1] Travail       |##............................| 23:00 restantes 
+[1] Travail       |##............................| 22:45 restantes 
+[1] Travail       |###...........................| 22:30 restantes 
+[1] Travail       |###...........................| 22:15 restantes 
+[1] Travail       |###...........................| 22:00 restantes 
+```

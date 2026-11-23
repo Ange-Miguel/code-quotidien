@@ -67,4 +67,3 @@ int main(int argc, char *argv[]) {
     printf("Terminé : %d cycle(s), %d min de travail concentré. Bravo !\n", finis, minutes_travail);
     return 0;
 }
-
