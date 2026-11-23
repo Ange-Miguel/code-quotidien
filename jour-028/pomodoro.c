@@ -38,3 +38,8 @@ static void phase(Etat e, int numero, long ms_par_seconde) {
     printf("\n");
 }
 
+static Etat suivant(Etat actuel, int cycles_finis) {
+    if (actuel != TRAVAIL) return TRAVAIL;
+    return cycles_finis % 4 == 0 ? PAUSE_LONGUE : PAUSE_COURTE;
+}
+
