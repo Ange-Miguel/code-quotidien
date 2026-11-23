@@ -8,3 +8,6 @@ Réviser ou coder pendant des heures sans pause fait chuter la concentration. La
 ## La solution
 Une machine à états (TRAVAIL, PAUSE_COURTE, PAUSE_LONGUE) et une barre de progression mise à jour chaque seconde. Un facteur d'accélération permet de tester le programme en quelques secondes (mode démo).
 
+## Ce qu'on apprend
+Les machines à états, nanosleep pour attendre sans bloquer le processeur, \r pour réécrire une ligne et fflush pour forcer l'affichage.
+
