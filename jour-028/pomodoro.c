@@ -43,3 +43,28 @@ static Etat suivant(Etat actuel, int cycles_finis) {
     return cycles_finis % 4 == 0 ? PAUSE_LONGUE : PAUSE_COURTE;
 }
 
+int main(int argc, char *argv[]) {
+    int cycles = 4;
+    long ms_par_seconde = 0;   /* démo : instantané */
+    if (argc >= 2) {
+        char *fin;
+        cycles = (int)strtol(argv[1], &fin, 10);
+        if (*fin || cycles < 1 || cycles > 12) {
+            fprintf(stderr, "Usage : %s [cycles 1-12] [--reel]\n", argv[0]);
+            return 1;
+        }
+        ms_par_seconde = (argc >= 3) ? 1000 : 0;
+    }
+    printf("Pomodoro : %d cycle(s) %s\n", cycles, ms_par_seconde ? "(temps réel)" : "(mode démo accéléré)");
+    Etat e = TRAVAIL;
+    int finis = 0, minutes_travail = 0;
+    while (finis < cycles) {
+        phase(e, finis + 1, ms_par_seconde);
+        if (e == TRAVAIL) { finis++; minutes_travail += DUREES_MIN[TRAVAIL]; }
+        if (finis == cycles) break;
+        e = suivant(e, finis);
+    }
+    printf("Terminé : %d cycle(s), %d min de travail concentré. Bravo !\n", finis, minutes_travail);
+    return 0;
+}
+
