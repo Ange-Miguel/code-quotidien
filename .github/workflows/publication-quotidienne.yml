@@ -36,20 +36,18 @@ jobs:
       - name: Récupérer la réserve de programmes
         run: git fetch --depth=1 origin reserve
 
-      - name: Publier le jour suivant
-        id: publication
-        env:
-          FORCER: ${{ inputs.forcer || 'false' }}
-        run: python3 .github/scripts/publier_jour.py
-
-      - name: Commit et push
-        if: steps.publication.outputs.jour != ''
-        env:
-          JOUR: ${{ steps.publication.outputs.jour }}
-          TITRE: ${{ steps.publication.outputs.titre }}
+      - name: Configurer l'auteur des commits
         run: |
           git config user.name "AKPANON Ange-Miguel"
           git config user.email "angemiguelosbelakpanon@gmail.com"
-          git add "jour-${JOUR}" PLAN.md
-          git commit -m "Jour ${JOUR} : ${TITRE}"
-          git push origin main
+
+      - name: Publier le jour suivant (12 commits progressifs)
+        id: publication
+        env:
+          FORCER: ${{ inputs.forcer || 'false' }}
+          NB_COMMITS: "12"
+        run: python3 .github/scripts/publier_jour.py
+
+      - name: Push
+        if: steps.publication.outputs.jour != ''
+        run: git push origin main
