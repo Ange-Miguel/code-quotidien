@@ -19,3 +19,8 @@ typedef enum { TRAVAIL, PAUSE_COURTE, PAUSE_LONGUE } Etat;
 static const char *NOMS[] = {"Travail", "Pause courte", "Pause longue"};
 static const int DUREES_MIN[] = {25, 5, 15};
 
+static void attendre_ms(long ms) {
+    struct timespec t = {ms / 1000, (ms % 1000) * 1000000L};
+    nanosleep(&t, NULL);
+}
+
