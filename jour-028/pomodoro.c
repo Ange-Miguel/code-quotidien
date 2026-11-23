@@ -15,3 +15,7 @@
 #include <stdlib.h>
 #include <time.h>
 
+typedef enum { TRAVAIL, PAUSE_COURTE, PAUSE_LONGUE } Etat;
+static const char *NOMS[] = {"Travail", "Pause courte", "Pause longue"};
+static const int DUREES_MIN[] = {25, 5, 15};
+
