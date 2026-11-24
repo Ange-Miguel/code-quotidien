@@ -29,3 +29,9 @@ def prix_psychologique(prix: float) -> int:
             return millier + fin
     return millier + 1900
 
+
+def analyse(revient: float, vente: float) -> dict:
+    marge = vente - revient
+    return {"marge": marge, "taux_marque": marge / vente, "taux_marge": marge / revient,
+            "coefficient": vente / revient}
+
