@@ -11,3 +11,8 @@ On calcule les deux notions. Taux de marque (marge / prix de vente) et taux de m
 ## Ce qu'on apprend
 La différence entre deux pourcentages qui se ressemblent, les fonctions pures, l'arrondi personnalisé et les tests par assertions.
 
+## Lancer
+```bash
+python3 marge.py
+```
+
