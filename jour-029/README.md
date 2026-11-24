@@ -16,3 +16,17 @@ La différence entre deux pourcentages qui se ressemblent, les fonctions pures, 
 python3 marge.py
 ```
 
+## Exemple de sortie
+```
+Écouteurs Bluetooth — revient 2 850 FCFA  taux de marque visé 40%
+   prix calculé 4 750 → prix affiché 4 900 FCFA
+   marge 2 050 FCFA | taux de marque 41.8% | taux de marge 71.9% | coefficient ×1.72
+
+Montre connectée — revient 8 100 FCFA  taux de marque visé 35%
+   prix calculé 12 462 → prix affiché 12 500 FCFA
+   marge 4 400 FCFA | taux de marque 35.2% | taux de marge 54.3% | coefficient ×1.54
+
+Lampe solaire — revient 4 600 FCFA  taux de marque visé 30%
+   prix calculé 6 571 → prix affiché 6 900 FCFA
+   marge 2 300 FCFA | taux de marque 33.3% | taux de marge 50.0% | coefficient ×1.50
+```
