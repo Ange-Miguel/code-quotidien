@@ -35,3 +35,13 @@ def analyse(revient: float, vente: float) -> dict:
     return {"marge": marge, "taux_marque": marge / vente, "taux_marge": marge / revient,
             "coefficient": vente / revient}
 
+
+def rapport(nom: str, revient: float, taux_marque: float) -> None:
+    brut = prix_de_vente(revient, taux_marque)
+    vente = prix_psychologique(brut)
+    a = analyse(revient, vente)
+    print(f"{nom} — revient {revient:,.0f} FCFA, taux de marque visé {taux_marque:.0%}".replace(",", " "))
+    print(f"   prix calculé {brut:,.0f} → prix affiché {vente:,} FCFA".replace(",", " "))
+    print(f"   marge {a['marge']:,.0f} FCFA | taux de marque {a['taux_marque']:.1%} | "
+          f"taux de marge {a['taux_marge']:.1%} | coefficient ×{a['coefficient']:.2f}\n".replace(",", " "))
+
