@@ -12,3 +12,20 @@ fonctions pures, l'arrondi personnalisé et les tests par assertions.
 import math
 import sys
 
+
+def prix_de_vente(revient: float, taux_marque: float) -> float:
+    if not 0 <= taux_marque < 1:
+        raise ValueError("taux de marque entre 0 et 99 %")
+    return revient / (1 - taux_marque)
+
+
+def prix_psychologique(prix: float) -> int:
+    """Arrondit au-dessus vers un prix en ...500 ou ...900 (ou ...950 sous 1 000)."""
+    if prix < 1000:
+        return int(math.ceil(prix / 50) * 50)
+    millier = int(prix // 1000) * 1000
+    for fin in (500, 900, 1500):
+        if millier + fin >= prix:
+            return millier + fin
+    return millier + 1900
+
