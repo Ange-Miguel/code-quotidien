@@ -45,3 +45,23 @@ def rapport(nom: str, revient: float, taux_marque: float) -> None:
     print(f"   marge {a['marge']:,.0f} FCFA | taux de marque {a['taux_marque']:.1%} | "
           f"taux de marge {a['taux_marge']:.1%} | coefficient ×{a['coefficient']:.2f}\n".replace(",", " "))
 
+
+def main() -> int:
+    assert math.isclose(prix_de_vente(700, 0.30), 1000)
+    assert prix_psychologique(4120) == 4500 and prix_psychologique(4600) == 4900
+    if len(sys.argv) == 1:
+        rapport("Écouteurs Bluetooth", 2850, 0.40)
+        rapport("Montre connectée", 8100, 0.35)
+        rapport("Lampe solaire", 4600, 0.30)
+        return 0
+    try:
+        rapport("Produit", float(sys.argv[1]), float(sys.argv[2]) / 100)
+    except (ValueError, IndexError) as e:
+        print(f"Erreur : {e}. Usage : python3 marge.py <prix de revient> <taux de marque %>", file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
