@@ -23,3 +23,7 @@ public class Main {
         private long dernier = -1;
         final List<Double> tours = new ArrayList<>();
 
+        Chronometre(LongSupplier horloge) { this.horloge = horloge; }
+
+        void demarrer() { dernier = horloge.getAsLong(); tours.clear(); }
+
