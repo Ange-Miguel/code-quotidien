@@ -27,3 +27,12 @@ public class Main {
 
         void demarrer() { dernier = horloge.getAsLong(); tours.clear(); }
 
+        double tour() {
+            if (dernier < 0) throw new IllegalStateException("chronomètre non démarré");
+            long maintenant = horloge.getAsLong();
+            double secondes = (maintenant - dernier) / 1e9;
+            dernier = maintenant;
+            tours.add(secondes);
+            return secondes;
+        }
+
