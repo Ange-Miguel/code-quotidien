@@ -17,3 +17,9 @@ import java.util.Locale;
 import java.util.Scanner;
 import java.util.function.LongSupplier;
 
+public class Main {
+    static class Chronometre {
+        private final LongSupplier horloge;
+        private long dernier = -1;
+        final List<Double> tours = new ArrayList<>();
+
