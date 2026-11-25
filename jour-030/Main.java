@@ -50,3 +50,36 @@ public class Main {
         }
     }
 
+    static String formater(double s) {
+        return String.format("%02d:%06.3f", (int) (s / 60), s % 60);
+    }
+
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.FRANCE);
+        if (args.length == 1 && args[0].equals("--reel")) {
+            Chronometre c = new Chronometre(System::nanoTime);
+            Scanner in = new Scanner(System.in);
+            System.out.println("Entrée pour démarrer…");
+            in.nextLine();
+            c.demarrer();
+            System.out.println("Entrée = tour, q + Entrée = arrêt");
+            while (in.hasNextLine() && !in.nextLine().trim().equalsIgnoreCase("q"))
+                System.out.println("   " + formater(c.tour()));
+            c.tour();
+            c.resume();
+            return;
+        }
+        if (args.length > 0) {
+            System.err.println("Usage : java Main [--reel]");
+            System.exit(1);
+        }
+        long[] temps = {0L, 61_420_000_000L, 119_800_000_000L, 182_050_000_000L, 243_300_000_000L, 301_950_000_000L};
+        int[] index = {0};
+        Chronometre c = new Chronometre(() -> temps[index[0]++]);
+        System.out.println("Démo : 400 m en 5 tours (horloge simulée)");
+        c.demarrer();
+        for (int i = 0; i < 5; i++) c.tour();
+        c.resume();
+    }
+}
+
