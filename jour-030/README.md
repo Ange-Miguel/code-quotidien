@@ -17,3 +17,14 @@ javac Main.java
 java Main
 ```
 
+## Exemple de sortie
+```
+Démo : 400 m en 5 tours (horloge simulée)
+  Tour  1 : 01:01,420
+  Tour  2 : 00:58,380 ← meilleur
+  Tour  3 : 01:02,250 ← pire
+  Tour  4 : 01:01,250
+  Tour  5 : 00:58,650
+  Total   : 05:01,950
+  Moyenne : 01:00,390
+```
