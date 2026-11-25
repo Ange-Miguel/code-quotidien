@@ -11,3 +11,9 @@ Une classe Chronometre basée sur System.nanoTime (horloge monotone, insensible 
 ## Ce qu'on apprend
 L'injection de dépendance, les interfaces fonctionnelles, les horloges monotones et les statistiques simples sur une liste.
 
+## Lancer
+```bash
+javac Main.java
+java Main
+```
+
