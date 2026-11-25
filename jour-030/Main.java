@@ -36,3 +36,17 @@ public class Main {
             return secondes;
         }
 
+        void resume() {
+            if (tours.isEmpty()) { System.out.println("Aucun tour."); return; }
+            double min = tours.stream().mapToDouble(Double::doubleValue).min().orElse(0);
+            double max = tours.stream().mapToDouble(Double::doubleValue).max().orElse(0);
+            double total = tours.stream().mapToDouble(Double::doubleValue).sum();
+            for (int i = 0; i < tours.size(); i++) {
+                double t = tours.get(i);
+                String marque = t == min ? " ← meilleur" : t == max ? " ← pire" : "";
+                System.out.printf("  Tour %2d : %s%s%n", i + 1, formater(t), marque);
+            }
+            System.out.printf("  Total   : %s%n  Moyenne : %s%n", formater(total), formater(total / tours.size()));
+        }
+    }
+
