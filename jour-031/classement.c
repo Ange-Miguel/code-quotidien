@@ -14,3 +14,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct {
+    char nom[32];
+    double moyenne;
+} Etudiant;
+
