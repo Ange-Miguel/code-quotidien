@@ -60,3 +60,19 @@ int main(int argc, char *argv[]) {
     if (!classe) return 2;
     for (int i = 0; i < n; i++) {
         char *egal = strchr(argv[i + 1], '=');
+        char *fin;
+        if (!egal || egal == argv[i + 1]) goto erreur;
+        double m = strtod(egal + 1, &fin);
+        if (*fin || m < 0 || m > 20) goto erreur;
+        snprintf(classe[i].nom, sizeof classe[i].nom, "%.*s", (int)(egal - argv[i + 1]), argv[i + 1]);
+        classe[i].moyenne = m;
+    }
+    classer(classe, n);
+    free(classe);
+    return 0;
+erreur:
+    fprintf(stderr, "Usage : %s Nom=moyenne [Nom=moyenne ...] (moyennes de 0 à 20)\n", argv[0]);
+    free(classe);
+    return 1;
+}
+
