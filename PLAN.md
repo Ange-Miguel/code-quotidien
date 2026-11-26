@@ -40,7 +40,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 028 | [x] | C | Minuteur Pomodoro en console |
 | 029 | [x] | Python | Calcul de marge et prix de vente conseillé |
 | 030 | [x] | Java | Chronomètre avec tours intermédiaires |
-| 031 | [ ] | C | Tri des notes d'une classe et classement |
+| 031 | [x] | C | Tri des notes d'une classe et classement |
 | 032 | [ ] | Python | Statistiques d'une série : moyenne, médiane, écart-type |
 | 033 | [ ] | Java | Recherche du maximum et du minimum dans une liste de prix |
 | 034 | [ ] | C | Conversion de chiffres romains ↔ arabes |

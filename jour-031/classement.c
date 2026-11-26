@@ -75,4 +75,3 @@ erreur:
     free(classe);
     return 1;
 }
-
