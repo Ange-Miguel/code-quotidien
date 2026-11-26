@@ -8,3 +8,6 @@ Un enseignant ou un délégué veut classer les étudiants selon leur moyenne, a
 ## La solution
 On stocke les étudiants dans un tableau de structures, on trie avec qsort et une fonction de comparaison (moyenne décroissante, puis nom), puis on calcule les rangs en tenant compte des égalités.
 
+## Ce qu'on apprend
+Qsort et les pointeurs de fonction, les structures, le tri stable par critères multiples et le classement « olympique ».
+
