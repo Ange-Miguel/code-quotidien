@@ -44,3 +44,19 @@ static void classer(Etudiant *classe, int n) {
            somme / n, admis, n, 100.0 * admis / n);
 }
 
+int main(int argc, char *argv[]) {
+    if (argc == 1) {
+        Etudiant classe[] = {
+            {"Adjovi Mireille", 14.5}, {"Houngbo Serge", 9.75}, {"Akpanon Ange", 15.2},
+            {"Dossou Carine", 14.5}, {"Kpade Yves", 11.0}, {"Zinsou Paul", 8.5},
+            {"Agossa Inès", 12.25}
+        };
+        classer(classe, (int)(sizeof classe / sizeof classe[0]));
+        return 0;
+    }
+    /* Arguments : Nom=moyenne ... */
+    int n = argc - 1;
+    Etudiant *classe = calloc((size_t)n, sizeof *classe);
+    if (!classe) return 2;
+    for (int i = 0; i < n; i++) {
+        char *egal = strchr(argv[i + 1], '=');
