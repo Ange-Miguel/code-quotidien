@@ -11,3 +11,9 @@ On stocke les étudiants dans un tableau de structures, on trie avec qsort et un
 ## Ce qu'on apprend
 Qsort et les pointeurs de fonction, les structures, le tri stable par critères multiples et le classement « olympique ».
 
+## Lancer
+```bash
+gcc -Wall -Wextra -o classement classement.c -lm
+./classement
+```
+
