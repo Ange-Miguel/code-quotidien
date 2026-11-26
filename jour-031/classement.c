@@ -19,3 +19,10 @@ typedef struct {
     double moyenne;
 } Etudiant;
 
+static int comparer(const void *a, const void *b) {
+    const Etudiant *x = a, *y = b;
+    if (x->moyenne > y->moyenne) return -1;
+    if (x->moyenne < y->moyenne) return 1;
+    return strcmp(x->nom, y->nom);   /* égalité : ordre alphabétique */
+}
+
