@@ -26,3 +26,21 @@ static int comparer(const void *a, const void *b) {
     return strcmp(x->nom, y->nom);   /* égalité : ordre alphabétique */
 }
 
+static void classer(Etudiant *classe, int n) {
+    qsort(classe, (size_t)n, sizeof *classe, comparer);
+    double somme = 0;
+    int admis = 0, rang = 1;
+    printf("%4s  %-20s %7s  %s\n", "Rang", "Nom", "Moyenne", "Décision");
+    for (int i = 0; i < n; i++) {
+        if (i > 0 && classe[i].moyenne != classe[i - 1].moyenne) rang = i + 1;
+        int ex_aequo = (i > 0 && classe[i].moyenne == classe[i - 1].moyenne) ||
+                       (i + 1 < n && classe[i].moyenne == classe[i + 1].moyenne);
+        printf("%3d%s  %-20s %7.2f  %s\n", rang, ex_aequo ? "e" : " ", classe[i].nom,
+               classe[i].moyenne, classe[i].moyenne >= 10 ? "admis" : "ajourné");
+        somme += classe[i].moyenne;
+        admis += classe[i].moyenne >= 10;
+    }
+    printf("\nMoyenne de la classe : %.2f | admis : %d/%d (%.0f %%)\n",
+           somme / n, admis, n, 100.0 * admis / n);
+}
+
