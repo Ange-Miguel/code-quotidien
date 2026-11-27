@@ -58,3 +58,21 @@ def rapport(nom: str, x: list[float]) -> None:
     histogramme(x)
     print()
 
+
+def main() -> int:
+    if len(sys.argv) == 1:
+        ventes = [12, 15, 9, 22, 15, 18, 11, 15, 30, 14, 13, 16, 95, 17]
+        rapport("Ventes journalières (unités)", ventes)
+        print("Remarque : la journée à 95 tire la moyenne vers le haut, pas la médiane.")
+        return 0
+    try:
+        rapport("Votre série", [float(v.replace(",", ".")) for v in sys.argv[1:]])
+    except ValueError as e:
+        print(f"Erreur : {e}. Usage : python3 statistiques.py v1 v2 v3 ...", file=sys.stderr)
+        return 1
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())
+
