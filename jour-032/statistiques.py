@@ -17,3 +17,13 @@ import sys
 def moyenne(x: list[float]) -> float:
     return sum(x) / len(x)
 
+
+def mediane(x: list[float]) -> float:
+    s, n = sorted(x), len(x)
+    return s[n // 2] if n % 2 else (s[n // 2 - 1] + s[n // 2]) / 2
+
+
+def ecart_type(x: list[float]) -> float:
+    m = moyenne(x)
+    return math.sqrt(sum((v - m) ** 2 for v in x) / len(x))
+
