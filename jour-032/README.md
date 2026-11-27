@@ -8,3 +8,6 @@ Un relevé de ventes, de températures ou de notes ne parle pas tout seul. On ve
 ## La solution
 On recode nous-mêmes moyenne, médiane, mode, variance, écart-type et quartiles (sans bibliothèque), puis on vérifie nos résultats avec le module statistics. Un histogramme texte montre la forme de la distribution.
 
+## Ce qu'on apprend
+Les formules statistiques de base, la différence entre moyenne et médiane face aux valeurs extrêmes, et la vérification croisée d'un calcul.
+
