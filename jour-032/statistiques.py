@@ -27,3 +27,9 @@ def ecart_type(x: list[float]) -> float:
     m = moyenne(x)
     return math.sqrt(sum((v - m) ** 2 for v in x) / len(x))
 
+
+def quartiles(x: list[float]) -> tuple[float, float]:
+    s, n = sorted(x), len(x)
+    bas, haut = s[: n // 2], s[(n + 1) // 2:]
+    return mediane(bas), mediane(haut)
+
