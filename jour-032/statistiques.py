@@ -33,3 +33,28 @@ def quartiles(x: list[float]) -> tuple[float, float]:
     bas, haut = s[: n // 2], s[(n + 1) // 2:]
     return mediane(bas), mediane(haut)
 
+
+def histogramme(x: list[float], classes: int = 5) -> None:
+    mini, maxi = min(x), max(x)
+    largeur = (maxi - mini) / classes or 1
+    comptes = [0] * classes
+    for v in x:
+        comptes[min(int((v - mini) / largeur), classes - 1)] += 1
+    for i, c in enumerate(comptes):
+        a = mini + i * largeur
+        print(f"   [{a:8.1f} ; {a + largeur:8.1f}[ {'█' * c} {c}")
+
+
+def rapport(nom: str, x: list[float]) -> None:
+    if len(x) < 2:
+        raise ValueError("au moins deux valeurs nécessaires")
+    q1, q3 = quartiles(x)
+    print(f"{nom} ({len(x)} valeurs)")
+    print(f"   moyenne {moyenne(x):.2f} | médiane {mediane(x):.2f} | mode {statistics.mode(x)}")
+    print(f"   min {min(x)} | max {max(x)} | écart-type {ecart_type(x):.2f} | Q1 {q1} | Q3 {q3}")
+    assert math.isclose(moyenne(x), statistics.mean(x))
+    assert math.isclose(mediane(x), statistics.median(x))
+    assert math.isclose(ecart_type(x), statistics.pstdev(x))
+    histogramme(x)
+    print()
+
