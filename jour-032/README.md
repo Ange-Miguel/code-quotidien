@@ -11,3 +11,8 @@ On recode nous-mêmes moyenne, médiane, mode, variance, écart-type et quartile
 ## Ce qu'on apprend
 Les formules statistiques de base, la différence entre moyenne et médiane face aux valeurs extrêmes, et la vérification croisée d'un calcul.
 
+## Lancer
+```bash
+python3 statistiques.py
+```
+
