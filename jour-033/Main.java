@@ -41,3 +41,25 @@ public class Main {
                 max.prix() - min.prix(), 100.0 * (max.prix() - min.prix()) / min.prix(), mediane);
     }
 
+    public static void main(String[] args) {
+        Locale.setDefault(Locale.FRANCE);
+        if (args.length == 0) {
+            analyser("Bouteille de gaz 12,5 kg (recharge)", List.of(
+                    new Offre("Godomey", 5600), new Offre("Calavi Kpota", 5500),
+                    new Offre("Akpakpa", 5800), new Offre("Cadjèhoun", 5650)));
+            analyser("Smartphone d'entrée de gamme", List.of(
+                    new Offre("Boutique Dantokpa", 62000), new Offre("En ligne (import)", 48500),
+                    new Offre("Revendeur Ganhi", 70000)));
+            return;
+        }
+        try {
+            List<Offre> offres = new java.util.ArrayList<>();
+            for (int i = 0; i < args.length; i++) offres.add(new Offre("Offre " + (i + 1), Integer.parseInt(args[i])));
+            analyser("Vos prix", offres);
+        } catch (NumberFormatException e) {
+            System.err.println("Prix invalide. Usage : java Main prix1 prix2 ...");
+            System.exit(1);
+        }
+    }
+}
+
