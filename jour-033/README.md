@@ -11,3 +11,9 @@ Un seul parcours de la liste suffit pour trouver à la fois le minimum et le max
 ## Ce qu'on apprend
 L'algorithme de recherche min/max en un passage, les records, les comparateurs et l'API Stream.
 
+## Lancer
+```bash
+javac Main.java
+java Main
+```
+
