@@ -32,3 +32,12 @@ public class Main {
         double mediane = tries.length % 2 == 1 ? tries[tries.length / 2]
                 : (tries[tries.length / 2 - 1] + tries[tries.length / 2]) / 2.0;
 
+        System.out.println(produit);
+        for (Offre o : offres) {
+            String tag = o == min ? "  ← moins cher" : o == max ? "  ← plus cher" : "";
+            System.out.printf("  %-18s %,8d FCFA%s%n", o.vendeur(), o.prix(), tag);
+        }
+        System.out.printf("  Écart : %,d FCFA (%.0f %%) | prix médian : %,.0f FCFA%n%n",
+                max.prix() - min.prix(), 100.0 * (max.prix() - min.prix()) / min.prix(), mediane);
+    }
+
