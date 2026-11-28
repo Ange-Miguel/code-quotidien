@@ -42,7 +42,7 @@ Statut : `[x]` fait, `[ ]` à venir.
 | 030 | [x] | Java | Chronomètre avec tours intermédiaires |
 | 031 | [x] | C | Tri des notes d'une classe et classement |
 | 032 | [x] | Python | Statistiques d'une série : moyenne, médiane, écart-type |
-| 033 | [ ] | Java | Recherche du maximum et du minimum dans une liste de prix |
+| 033 | [x] | Java | Recherche du maximum et du minimum dans une liste de prix |
 | 034 | [ ] | C | Conversion de chiffres romains ↔ arabes |
 | 035 | [ ] | Python | Nombre en lettres en français (pour chèques et factures) |
 | 036 | [ ] | Java | Détection des nombres premiers (crible d'Ératosthène) |
