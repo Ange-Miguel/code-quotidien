@@ -17,3 +17,14 @@ import java.util.Locale;
 public class Main {
     record Offre(String vendeur, int prix) {}
 
+    static void analyser(String produit, List<Offre> offres) {
+        if (offres.isEmpty()) throw new IllegalArgumentException("aucune offre");
+        Offre min = offres.get(0), max = offres.get(0);
+        for (Offre o : offres) {               // un seul passage
+            if (o.prix() < min.prix()) min = o;
+            if (o.prix() > max.prix()) max = o;
+        }
+        // Vérification avec les streams
+        Offre minStream = offres.stream().min(Comparator.comparingInt(Offre::prix)).orElseThrow();
+        if (minStream.prix() != min.prix()) throw new IllegalStateException("incohérence");
+
