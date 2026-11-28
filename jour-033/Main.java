@@ -28,3 +28,7 @@ public class Main {
         Offre minStream = offres.stream().min(Comparator.comparingInt(Offre::prix)).orElseThrow();
         if (minStream.prix() != min.prix()) throw new IllegalStateException("incohérence");
 
+        int[] tries = offres.stream().mapToInt(Offre::prix).sorted().toArray();
+        double mediane = tries.length % 2 == 1 ? tries[tries.length / 2]
+                : (tries[tries.length / 2 - 1] + tries[tries.length / 2]) / 2.0;
+
