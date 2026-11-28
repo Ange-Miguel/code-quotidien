@@ -8,3 +8,6 @@ On compare les prix d'un même produit chez plusieurs fournisseurs ou vendeurs :
 ## La solution
 Un seul parcours de la liste suffit pour trouver à la fois le minimum et le maximum (et leur position). On calcule aussi l'économie réalisée en choisissant le moins cher et le prix médian du marché. On compare avec l'API Stream de Java.
 
+## Ce qu'on apprend
+L'algorithme de recherche min/max en un passage, les records, les comparateurs et l'API Stream.
+
